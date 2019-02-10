@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'immutable@4.0.0-rc.12',
+1 verbose cli   'jquery@1.9.1',
+1 verbose cli   '-',
+1 verbose cli   '3' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData immutable@4.0.0-rc.12
+8 silly fetchPackageMetaData jquery@1.9.1
+9 silly fetchPackageMetaData -
+10 silly fetchPackageMetaData 3
+11 silly fetchNamedPackageData immutable
+12 silly mapToRegistry name immutable
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/immutable
+16 silly fetchNamedPackageData jquery
+17 silly mapToRegistry name jquery
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/jquery
+21 silly fetchOtherPackageData -
+22 silly cache add args [ '-', null ]
+23 verbose cache add spec -
+24 silly fetchNamedPackageData 3
+25 silly mapToRegistry name 3
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/3
+29 verbose request uri https://registry.npmjs.org/jquery
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 2:50:46 pm
+32 verbose request id 19ae5ab49dfc4f71
+33 http request GET https://registry.npmjs.org/jquery
+34 silly cache add parsed spec Result {
+34 silly cache add   raw: '-',
+34 silly cache add   scope: null,
+34 silly cache add   name: null,
+34 silly cache add   rawSpec: '-',
+34 silly cache add   spec: '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-',
+34 silly cache add   type: 'local' }
+35 verbose request uri https://registry.npmjs.org/3
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 2:50:46 pm
+38 http request GET https://registry.npmjs.org/3
+39 error addLocal Could not install /home/andy/Codes/Udemy/NodeJs/porfolio-app/-
+40 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-'
+40 silly fetchPackageMetaData  error for - { Error: ENOENT: no such file or directory, open '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-'
+40 silly fetchPackageMetaData   errno: -2,
+40 silly fetchPackageMetaData   code: 'ENOENT',
+40 silly fetchPackageMetaData   syscall: 'open',
+40 silly fetchPackageMetaData   path: '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-' }
+41 verbose request uri https://registry.npmjs.org/immutable
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 2:50:46 pm
+44 verbose etag W/"deb149672ec5f7c62464042d17c63bcd"
+45 verbose lastModified Fri, 04 Jan 2019 04:56:48 GMT
+46 http request GET https://registry.npmjs.org/immutable
+47 http 200 https://registry.npmjs.org/jquery
+48 verbose headers { date: 'Sun, 03 Feb 2019 04:50:46 GMT',
+48 verbose headers   'content-type': 'application/json',
+48 verbose headers   'transfer-encoding': 'chunked',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'set-cookie':
+48 verbose headers    [ '__cfduid=df3a69e34ae9ca1ae5e5845c09947c7c31549169446; expires=Mon, 03-Feb-20 04:50:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+48 verbose headers   'cf-cache-status': 'HIT',
+48 verbose headers   'cache-control': 'max-age=300',
+48 verbose headers   'cf-ray': '4a3247530db965db-SYD',
+48 verbose headers   etag: 'W/"84b5189a35c6ce943c9b73f4d8e82a38"',
+48 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+48 verbose headers   'last-modified': 'Fri, 04 Jan 2019 06:22:46 GMT',
+48 verbose headers   vary: 'accept-encoding, accept',
+48 verbose headers   'x-amz-meta-rev': '637-cbfc09196165341ea47a749ed3e00804',
+48 verbose headers   server: 'cloudflare',
+48 verbose headers   'content-encoding': 'gzip' }
+49 silly get cb [ 200,
+49 silly get   { date: 'Sun, 03 Feb 2019 04:50:46 GMT',
+49 silly get     'content-type': 'application/json',
+49 silly get     'transfer-encoding': 'chunked',
+49 silly get     connection: 'keep-alive',
+49 silly get     'set-cookie':
+49 silly get      [ '__cfduid=df3a69e34ae9ca1ae5e5845c09947c7c31549169446; expires=Mon, 03-Feb-20 04:50:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+49 silly get     'cf-cache-status': 'HIT',
+49 silly get     'cache-control': 'max-age=300',
+49 silly get     'cf-ray': '4a3247530db965db-SYD',
+49 silly get     etag: 'W/"84b5189a35c6ce943c9b73f4d8e82a38"',
+49 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+49 silly get     'last-modified': 'Fri, 04 Jan 2019 06:22:46 GMT',
+49 silly get     vary: 'accept-encoding, accept',
+49 silly get     'x-amz-meta-rev': '637-cbfc09196165341ea47a749ed3e00804',
+49 silly get     server: 'cloudflare',
+49 silly get     'content-encoding': 'gzip' } ]
+50 verbose get saving jquery to /home/andy/.npm/registry.npmjs.org/jquery/.cache.json
+51 http 304 https://registry.npmjs.org/immutable
+52 verbose headers { date: 'Sun, 03 Feb 2019 04:50:46 GMT',
+52 verbose headers   connection: 'keep-alive',
+52 verbose headers   'set-cookie':
+52 verbose headers    [ '__cfduid=df43b20dbe73e25bbe0284084cb44b3161549169446; expires=Mon, 03-Feb-20 04:50:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+52 verbose headers   'cf-cache-status': 'HIT',
+52 verbose headers   'cache-control': 'max-age=300',
+52 verbose headers   'cf-ray': '4a3247531b5465bd-SYD',
+52 verbose headers   etag: '"deb149672ec5f7c62464042d17c63bcd"',
+52 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+52 verbose headers   'last-modified': 'Fri, 04 Jan 2019 04:56:48 GMT',
+52 verbose headers   vary: 'accept-encoding, accept',
+52 verbose headers   'x-amz-meta-rev': '319-eea28b052e85e123fb7e48fd07fba8b8',
+52 verbose headers   server: 'cloudflare' }
+53 silly get cb [ 304,
+53 silly get   { date: 'Sun, 03 Feb 2019 04:50:46 GMT',
+53 silly get     connection: 'keep-alive',
+53 silly get     'set-cookie':
+53 silly get      [ '__cfduid=df43b20dbe73e25bbe0284084cb44b3161549169446; expires=Mon, 03-Feb-20 04:50:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+53 silly get     'cf-cache-status': 'HIT',
+53 silly get     'cache-control': 'max-age=300',
+53 silly get     'cf-ray': '4a3247531b5465bd-SYD',
+53 silly get     etag: '"deb149672ec5f7c62464042d17c63bcd"',
+53 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+53 silly get     'last-modified': 'Fri, 04 Jan 2019 04:56:48 GMT',
+53 silly get     vary: 'accept-encoding, accept',
+53 silly get     'x-amz-meta-rev': '319-eea28b052e85e123fb7e48fd07fba8b8',
+53 silly get     server: 'cloudflare' } ]
+54 verbose etag https://registry.npmjs.org/immutable from cache
+55 verbose get saving immutable to /home/andy/.npm/registry.npmjs.org/immutable/.cache.json
+56 http 200 https://registry.npmjs.org/3
+57 verbose headers { date: 'Sun, 03 Feb 2019 04:50:47 GMT',
+57 verbose headers   'content-type': 'application/json; charset=UTF-8',
+57 verbose headers   'transfer-encoding': 'chunked',
+57 verbose headers   connection: 'keep-alive',
+57 verbose headers   'set-cookie':
+57 verbose headers    [ '__cfduid=d05ff71d4a32e23053f4c6f04e192b3431549169446; expires=Mon, 03-Feb-20 04:50:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+57 verbose headers   'cf-cache-status': 'REVALIDATED',
+57 verbose headers   'cache-control': 'max-age=300',
+57 verbose headers   'cf-ray': '4a324752fee36575-SYD',
+57 verbose headers   etag: 'W/"d9d369e1149d4f87fbccdb4a4356f04b"',
+57 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+57 verbose headers   'last-modified': 'Sat, 26 May 2018 14:09:34 GMT',
+57 verbose headers   vary: 'accept-encoding, accept',
+57 verbose headers   server: 'cloudflare',
+57 verbose headers   'content-encoding': 'gzip' }
+58 silly get cb [ 200,
+58 silly get   { date: 'Sun, 03 Feb 2019 04:50:47 GMT',
+58 silly get     'content-type': 'application/json; charset=UTF-8',
+58 silly get     'transfer-encoding': 'chunked',
+58 silly get     connection: 'keep-alive',
+58 silly get     'set-cookie':
+58 silly get      [ '__cfduid=d05ff71d4a32e23053f4c6f04e192b3431549169446; expires=Mon, 03-Feb-20 04:50:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+58 silly get     'cf-cache-status': 'REVALIDATED',
+58 silly get     'cache-control': 'max-age=300',
+58 silly get     'cf-ray': '4a324752fee36575-SYD',
+58 silly get     etag: 'W/"d9d369e1149d4f87fbccdb4a4356f04b"',
+58 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+58 silly get     'last-modified': 'Sat, 26 May 2018 14:09:34 GMT',
+58 silly get     vary: 'accept-encoding, accept',
+58 silly get     server: 'cloudflare',
+58 silly get     'content-encoding': 'gzip' } ]
+59 verbose get saving 3 to /home/andy/.npm/registry.npmjs.org/3/.cache.json
+60 silly rollbackFailedOptional Starting
+61 silly rollbackFailedOptional Finishing
+62 silly runTopLevelLifecycles Starting
+63 silly runTopLevelLifecycles Finishing
+64 silly install printInstalled
+65 verbose stack Error: ENOENT: no such file or directory, open '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-'
+66 verbose cwd /home/andy/Codes/Udemy/NodeJs/porfolio-app
+67 error Linux 4.15.0-43-generic
+68 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save" "immutable@4.0.0-rc.12" "jquery@1.9.1" "-" "3"
+69 error node v8.10.0
+70 error npm  v3.5.2
+71 error path /home/andy/Codes/Udemy/NodeJs/porfolio-app/-
+72 error code ENOENT
+73 error errno -2
+74 error syscall open
+75 error enoent ENOENT: no such file or directory, open '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-'
+76 error enoent ENOENT: no such file or directory, open '/home/andy/Codes/Udemy/NodeJs/porfolio-app/-'
+76 error enoent This is most likely not a problem with npm itself
+76 error enoent and is related to npm not being able to find a file.
+77 verbose exit [ -2, true ]
