@@ -7,6 +7,13 @@ export default function(Component) {
 
     return class withAuth extends React.Component {
 
+
+        static async getInitialProps(args){
+            const pageProps = await Component.getInitialProps && Component.getInitialProps(args)
+
+            return { ...pageProps }
+        }
+
         renderPage  = () => {
 
             console.log(isAuthenticated)
