@@ -56,4 +56,4 @@ class Secretpage extends React.Component{
     }
 }
 
-export default withAuth(Secretpage);
+export default withAuth()(Secretpage);
