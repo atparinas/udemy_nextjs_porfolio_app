@@ -4,6 +4,8 @@ import axios from 'axios';
 import Cookie from 'js-cookie';
 import jwt from 'jsonwebtoken';
 
+import {getCookieFromRequest} from '../helpers/utils';
+
 
 class Auth {
  
@@ -153,13 +155,14 @@ class Auth {
 
     async serverAuth(req){
         if(req.headers.cookie){
-            const tokenCookie = req.headers.cookie.split(';').find( c=> c.trim().startsWith('jwt='))
+            // const tokenCookie = req.headers.cookie.split(';').find( c=> c.trim().startsWith('jwt='))
 
-            if(!tokenCookie){
-                return undefined;
-            }
+            // if(!tokenCookie){
+            //     return undefined;
+            // }
 
-            const token = tokenCookie.split('=')[1];
+            // const token = tokenCookie.split('=')[1];
+            const token = getCookieFromRequest(req, 'jwt')
             const verifedToken = await this.verifyToken(token);
 
             return verifedToken;

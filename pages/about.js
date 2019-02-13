@@ -3,15 +3,19 @@ import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import BasePage from '../components/shared/BasePage';
 
-const About = (props) => {
+import withAuth from '../components/hoc/withAuth'
 
-    return(
-        <BaseLayout {...props.auth} >
-            <BasePage>
-                <div> I am about page</div>
-            </BasePage>
-        </BaseLayout>
-    )
+class About extends React.Component {
+
+    render(){
+        return(
+            <BaseLayout {...this.props.auth} >
+                <BasePage>
+                    <div> I am about page</div>
+                </BasePage>
+            </BaseLayout>
+        )
+    }
 }
 
-export default About;
+export default withAuth(About);

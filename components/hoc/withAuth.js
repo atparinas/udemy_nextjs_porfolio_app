@@ -15,10 +15,10 @@ export default function(Component) {
         }
 
         renderPage  = () => {
+            const {isAuthenticated} = this.props.auth;
 
             console.log(isAuthenticated)
 
-            const {isAuthenticated} = this.props.auth;
             
             if(isAuthenticated){
                 return ( <Component {...this.props} /> )

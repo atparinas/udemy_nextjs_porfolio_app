@@ -8,7 +8,7 @@ import BaseLayout from '../components/layouts/BaseLayout';
 const Index = (props) => {
 
   const {user, isAuthenticated} = props.auth;
-    console.log(props);
+    console.log(user);
 
     return (
         <BaseLayout className="cover" {...props.auth} >
