@@ -1,6 +1,7 @@
 const jwt = require('express-jwt');
 const jwksClient = require('jwks-rsa')
 
+const namespace = 'http://localhost:3000/'
 
 //Middleware
 exports.checkJWT = jwt({ 
@@ -14,3 +15,15 @@ exports.checkJWT = jwt({
     issuer: 'https://parinas.au.auth0.com/',
     algorithms: ['RS256']
 })
+
+
+exports.checkRole = role => (req, res, next) => {
+    const user = req.user;
+
+    if(user && user[namespace + 'role'] === role){
+        next();
+    }else {
+        return res.status(401).send({title: 'not authorize'})
+    }
+
+}
