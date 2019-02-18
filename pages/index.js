@@ -11,7 +11,7 @@ const Index = (props) => {
     console.log(user);
 
     return (
-        <BaseLayout className="cover" {...props.auth} >
+        <BaseLayout className="cover" {...props.auth} headerType='index' >
         <div className="main-section">
           <div className="background-image">
             <img src="/static/images/background-index.png" />

@@ -10,12 +10,11 @@ class About extends React.Component {
     render(){
         return(
             <BaseLayout {...this.props.auth} >
-                <BasePage>
-                    <div> I am about page</div>
+                <BasePage title='I am About Page' >
                 </BasePage>
             </BaseLayout>
         )
     }
 }
 
-export default withAuth(About);
+export default withAuth()(About);
